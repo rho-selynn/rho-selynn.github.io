@@ -1,6 +1,6 @@
 var draw = function(snakeToDraw, apple) {
   var drawableSnake = { color: "lightgrey", pixels: snakeToDraw }
-  var drawableApple = { color: "tomato", pixels: [apple] }
+  var drawableApple = { color: "darkred", pixels: [apple] }
   var drawableObjects = [drawableSnake, drawableApple]
   CHUNK.draw(drawableObjects)
 }
@@ -72,5 +72,5 @@ var apple = { top: 8, left: 10 }
 var snake = [{ top: 1, left: 0, direction: "down" }, { top: 0, left: 0, direction: "down" }]
 
 
-CHUNK.executeNTimesPerSecond(advanceGame, 10)
+CHUNK.executeNTimesPerSecond(advanceGame, 7)
 CHUNK.onArrowKey(changeDirection)
